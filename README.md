@@ -1,3 +1,78 @@
+
+## HTML Elements
+
+body grid setup: 3 rows: top row - header 
+middle row - body 
+bottom row - slogan
+
+middle row: two columns 3fr left 2fr right
+
+Header: Title
+
+Main:
+
+[three dropdown menus to select city, water, landscape
+
+p tag below each dropdown that displays amount of times changed]
+
+[three img tags]
+
+bottom row:
+
+input tag 
+
+add slogan button
+
+slogan ptag
+
+## Events
+
+[dropdown on change event listener for each dropdown menu
+
+change img src according to value chosen from dropdown menu]
+
+[on change amount of times changed is updated in DOM]
+
+[user types slogan in input 
+
+add slogan button updates DOM with new slogan]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## The Golden Rule: 
 
 🦸 🦸‍♂️ `Stop starting and start finishing.` 🏁

@@ -20,7 +20,7 @@ header {
 
 main {
     display: grid;
-    grid-template-columns: 67% 33%;
+    grid-template-columns: 50% 50%;
     
 }
 
@@ -52,3 +52,4 @@ img {
     align-items: center;
     background-color: bisque;
 }
+

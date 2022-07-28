@@ -22,44 +22,45 @@
 
     <main>
         <div class="img-container">
-            <img src="./assets/city-sunset.jpg" id="city-image" />
-            <img src="./assets/river-sunset.jpg" id="water-image"/>
-            <img src="./assets/mountain-sunset.png" id="landscape-image" />
+            <img id="city-image" />
+            <img 
+            id="water-image"/>
+            <img id="landscape-image" />
         </div>
         <div class="dropdown-container">
-            <div>
-                <label>Choose your city</label>
+            <div id="city-container">
+                <label>Choose your city image:</label>
                 <select id="city-dropdown">
                     <option value="big-city">Big city</option>
                     <option value="small-town">Small town</option>
-                    <option value="village">Village</option>
+                    <option value="island">Village</option>
                 </select>
-                <p>you have changed</p>
+                <p>You have changed our city image <span id="times-changed-city">0</span> times.</p>
             </div>
-            <div>
-                <label>Choose your water</label>
+            <div id="water-container">
+                <label>Choose your water image:</label>
                 <select id="water-dropdown">
-                    <option value="river"></option>
-                    <option value="ocean"></option>
-                    <option value="lake"></option>
+                    <option value="river">River</option>
+                    <option value="ocean">Ocean</option>
+                    <option value="lake">Lake</option>
                 </select>
-                <p>you have changed</p>
+                <p>You have changed water image <span id="times-changed-water">0</span> times.</p>
             </div>
-            <div>
-                <label>Choose your landscape</label>
+            <div id="landscape-container">
+                <label>Choose your landscape image:</label>
                 <select id="landscape-dropdown">
-                    <option value="mountain"></option>
-                    <option value="field"></option>
-                    <option value="jungle"></option>
+                    <option value="mountain">Mountain</option>
+                    <option value="field">Field</option>
+                    <option value="jungle">Jungle</option>
                 </select>
-                <p>you have changed</p>
+                <p>You have changed you landscape image <span id="times-changed-landscape">0</span> times.</p>
             </div>
         </div>
     </main>
     <section class="slogan-section">
         <input type="text" id="slogan-input">
         <button id="slogan-button">Add Slogan</button>
-        <p>Slogan goes here</p>
+        <p id="slogan-el">Slogan goes here</p>
     </section>
 
     <script type="module" src="app.js"></script>
