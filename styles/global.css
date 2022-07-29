@@ -4,7 +4,7 @@
 
 body {
     display: grid;
-    grid-template-rows: 1fr 5fr 2fr;
+    grid-template-rows: 1fr 5fr 1fr 2fr;
 }
 
 
@@ -16,18 +16,24 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: cursive;
 }
 
 main {
     display: grid;
     grid-template-columns: 50% 50%;
+    background-color: black;
+    color: white;
+    font-family: cursive;
+    font-size: 20px;
     
 }
 
 .img-container {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
-    background-color:azure;
+    
+    
 }
 
 .dropdown-container {
@@ -35,7 +41,7 @@ main {
     grid-template-rows: 1fr 1fr 1fr;
     justify-content: center;
     align-items: center;
-    background-color: azure;
+    
 }
 
 img {
@@ -43,6 +49,14 @@ img {
     width: 250px;
     margin: 10px;
     justify-self: center;
+    border-width: 0px;
+    
+}
+
+.times-changed-section {
+    text-align: center;
+    background-color: rgb(231, 205, 173);
+    font-family: cursive;
 }
 
 .slogan-section {
@@ -53,3 +67,14 @@ img {
     background-color: bisque;
 }
 
+#water-image {
+    border-width: 0px;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    margin: 10px;
+}

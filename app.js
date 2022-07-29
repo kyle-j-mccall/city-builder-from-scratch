@@ -36,18 +36,15 @@ cityDropdown.addEventListener('change', () => {
     cityImage.src = `/assets/${city}.png`;
     cityTally++;
     timesChangedCity.textContent = cityTally;
-    
-    
-
-    
+    cityImage.classList.remove('hidden');
 });
-
 
 waterDropdown.addEventListener('change', () => {
     let water = waterDropdown.value;
     waterImage.src = `/assets/${water}.png`;
     waterTally++;
     timesChangedWater.textContent = waterTally;
+    waterImage.classList.remove('hidden');
 });
 
 landscapeDropdown.addEventListener('change', () => {
@@ -55,8 +52,26 @@ landscapeDropdown.addEventListener('change', () => {
     landscapeImage.src = `/assets/${landscape}.png`;
     landscapeTally++;
     timesChangedLandscape.textContent = landscapeTally;
+    landscapeImage.classList.remove('hidden');
 });
 
-// function handleTally(tally, timesChangedEl) {
-//     timesChangedEl.textContent = tally;
-// }
+sloganButton.addEventListener('click', () => {
+    const newSlogan = sloganInput.value;
+    slogansArr.push(newSlogan);
+    sloganEl.textContent = '';
+    addSlogans();
+    
+    
+
+});
+
+
+function addSlogans() {
+    for (let slogan of slogansArr) {
+        const pTag = document.createElement('p');
+        sloganEl.append(pTag);
+        pTag.textContent = slogan;
+      
+      
+    } sloganInput.value = '';
+}

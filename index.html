@@ -22,10 +22,10 @@
 
     <main>
         <div class="img-container">
-            <img id="city-image" />
+            <img id="city-image" class="hidden"/>
             <img 
-            id="water-image"/>
-            <img id="landscape-image" />
+            id="water-image" class="hidden"/>
+            <img id="landscape-image" class="hidden" />
         </div>
         <div class="dropdown-container">
             <div id="city-container">
@@ -35,7 +35,6 @@
                     <option value="small-town">Small town</option>
                     <option value="island">Village</option>
                 </select>
-                <p>You have changed our city image <span id="times-changed-city">0</span> times.</p>
             </div>
             <div id="water-container">
                 <label>Choose your water image:</label>
@@ -44,7 +43,6 @@
                     <option value="ocean">Ocean</option>
                     <option value="lake">Lake</option>
                 </select>
-                <p>You have changed water image <span id="times-changed-water">0</span> times.</p>
             </div>
             <div id="landscape-container">
                 <label>Choose your landscape image:</label>
@@ -53,14 +51,22 @@
                     <option value="field">Field</option>
                     <option value="jungle">Jungle</option>
                 </select>
-                <p>You have changed you landscape image <span id="times-changed-landscape">0</span> times.</p>
             </div>
         </div>
     </main>
+    <section class="times-changed-section">
+        <p>You have changed our city image <span id="times-changed-city">0</span> times.</p>
+        <p>You have changed water image <span id="times-changed-water">0</span> times.</p>
+        <p>You have changed you landscape image <span id="times-changed-landscape">0</span> times.</p>
+    </section>
     <section class="slogan-section">
+        <h3>Add a slogan!</h3>
         <input type="text" id="slogan-input">
         <button id="slogan-button">Add Slogan</button>
-        <p id="slogan-el">Slogan goes here</p>
+        <div id="slogan-el">
+
+        </div>
+        
     </section>
 
     <script type="module" src="app.js"></script>
