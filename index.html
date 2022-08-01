@@ -17,15 +17,57 @@
 
 <body>
     <header>
-        <img src="/assets/html_css_js.png">
-        <h1>Web App</h1>
+        <h1>Postcard Builder</h1>
     </header>
 
     <main>
-
+        <div class="img-container">
+            <img id="city-image" class="hidden"/>
+            <img 
+            id="water-image" class="hidden"/>
+            <img id="landscape-image" class="hidden" />
+        </div>
+        <div class="dropdown-container">
+            <div id="city-container">
+                <label>Choose your city image:</label>
+                <select id="city-dropdown">
+                    <option value="big-city">Big city</option>
+                    <option value="small-town">Small town</option>
+                    <option value="island">Village</option>
+                </select>
+            </div>
+            <div id="water-container">
+                <label>Choose your water image:</label>
+                <select id="water-dropdown">
+                    <option value="river">River</option>
+                    <option value="ocean">Ocean</option>
+                    <option value="lake">Lake</option>
+                </select>
+            </div>
+            <div id="landscape-container">
+                <label>Choose your landscape image:</label>
+                <select id="landscape-dropdown">
+                    <option value="mountain">Mountain</option>
+                    <option value="field">Field</option>
+                    <option value="jungle">Jungle</option>
+                </select>
+            </div>
+        </div>
     </main>
+    <section class="times-changed-section">
+        <p id="stats">You have changed our city image 0 times.
+        You have changed water image 0 times.
+        You have changed you landscape image 0 times.</p>
+    </section>
+    <section class="slogan-section">
+        <h3>Add a slogan!</h3>
+        <input type="text" id="slogan-input">
+        <button id="slogan-button">Add Slogan</button>
+        <div id="slogan-el">
 
-    <footer>&copy;2022 Software Developer</footer>
+        </div>
+        
+    </section>
 
     <script type="module" src="app.js"></script>
 </body>
