@@ -14,12 +14,9 @@ const landscapeDropdown = document.getElementById('landscape-dropdown');
 const cityImage = document.getElementById('city-image');
 const waterImage = document.getElementById('water-image');
 const landscapeImage = document.getElementById('landscape-image');
+const stats = document.getElementById('stats');
 
 
-
-const timesChangedCity = document.getElementById('times-changed-city');
-const timesChangedWater = document.getElementById('times-changed-water');
-const timesChangedLandscape = document.getElementById('times-changed-landscape');
 
 const sloganInput = document.getElementById('slogan-input');
 const sloganButton = document.getElementById('slogan-button');
@@ -35,7 +32,7 @@ cityDropdown.addEventListener('change', () => {
     let city = cityDropdown.value;
     cityImage.src = `/assets/${city}.png`;
     cityTally++;
-    timesChangedCity.textContent = cityTally;
+    displayCountStats();
     cityImage.classList.remove('hidden');
 });
 
@@ -43,7 +40,7 @@ waterDropdown.addEventListener('change', () => {
     let water = waterDropdown.value;
     waterImage.src = `/assets/${water}.png`;
     waterTally++;
-    timesChangedWater.textContent = waterTally;
+    displayCountStats();
     waterImage.classList.remove('hidden');
 });
 
@@ -51,7 +48,7 @@ landscapeDropdown.addEventListener('change', () => {
     let landscape = landscapeDropdown.value;
     landscapeImage.src = `/assets/${landscape}.png`;
     landscapeTally++;
-    timesChangedLandscape.textContent = landscapeTally;
+    displayCountStats();
     landscapeImage.classList.remove('hidden');
 });
 
@@ -74,4 +71,8 @@ function addSlogans() {
       
       
     } sloganInput.value = '';
+}
+
+function displayCountStats() {
+    stats.textContent = `You have changed our city image ${cityTally} times. You have changed water image ${waterTally} times. You have changed you landscape image ${landscapeTally} times.`;
 }
